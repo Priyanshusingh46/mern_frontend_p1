@@ -15,11 +15,15 @@ const Login = () => {
         email,
         password,
       });
-      console.log(result.data);
-      console.log(typeof(result.data))
-      if(result.data){
+      console.log(result);
+      console.log(typeof(result.data.name))
+      if(result.data.name){
         console.log("annder aa gaye")
-        localStorage.setItem("user",JSON.stringify(result.data));
+        localStorage.setItem("user",JSON.stringify(result.data.name));
+        if(result.data.email==="priyanshusingh1877@gmail.com"){
+        localStorage.setItem("email",email);
+        }
+        
         navigate("/");
       }
 
@@ -28,6 +32,10 @@ const Login = () => {
       console.log(e)
     }
   };
+
+  const redirecttoRegister=()=>{
+      navigate("/register")
+  }
   return (
     <div
       style={{
@@ -55,8 +63,11 @@ const Login = () => {
           />
           <br></br>
           <p>{items}</p>
-          <button type="submit" onClick={(e) => collectdata(e)}>
+          <button type="submit" onClick={(e) => collectdata(e)} style={{fontSize:"18px"}}>
             Login In
+          </button>
+          <button type="submit" onClick={redirecttoRegister} style={{fontSize:"18px"}}>
+            Register
           </button>
         </form>
       </div>

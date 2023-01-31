@@ -1,0 +1,165 @@
+body{
+    overflow-x: hidden;
+    padding: 0;
+    margin:0;
+    box-sizing: border-box;
+}
+
+/* Header */
+
+#anulogo{
+    width: 70px;
+    height: 70px;
+    margin-left: 7px;
+    margin-top: 1%;
+}
+.logoBox{
+    display:flex;
+    flex-direction: row;
+}
+#StoreName{
+    font-size: 30px;
+    font-style: italic;
+    font-weight: 500;
+    align-self: center;
+    margin-left: 37px;
+    color: #95060B;
+}
+.link{
+    display:flex;
+    text-decoration: none;
+    list-style-type: none;
+    font-family: 'HelveticaNeue';
+    font-style: normal;
+    font-weight: 400;
+    font-size: 30px;
+    line-height: 28px;
+    color: #FDBB11;
+    margin-left: 12px;
+
+}
+.NavOuterBox{
+    display: flex;
+    position:relative;
+    justify-content: space-between;
+    background: #61A6C5;
+    width: 100%;
+    flex-wrap: wrap;
+}
+li a{
+    color:#FDBB11;
+}
+li{
+    margin-right: 20px;
+}
+a:link{
+    text-decoration: none;
+}
+
+a:Visited{
+    text-decoration: underline;
+}
+.HeaderBox ul{
+    list-style: none;
+}
+.active{
+    color:#95060B;
+}
+
+/* crosuel part*/
+#crosolimage{
+    height: 60vh;
+}
+
+/* Sareejs */
+
+.Sareediv{
+    display: flex;
+    flex-wrap: wrap;
+    justify-content: space-between;
+    
+}
+#ourProduct{
+    text-align: center;
+    font-size: 37px;
+}
+
+/* ItemsCard.js */
+#sareeimagecard{
+    height: 63vh;
+}
+
+.TextdivPara{
+    display:flex;
+    justify-content:space-between
+}
+
+.TextdivPara1{
+    display:flex;
+    justify-content:space-between;
+    margin-top: -7%;
+}
+.Descriptionsarediv{
+    width: 100%;
+    margin-top: -1%;
+    margin-bottom: 7%;
+    border: 1px solid black;
+}
+#descriptionrightside{
+    font-size:20px;
+    font-Weight:bold;
+    margin-right:10%;
+    margin-left: -13%;
+}
+
+#descriptionrightside1{
+    font-size:20px;
+    margin-right:10%;
+    font-weight: bold;
+    margin-left: 9%;
+}
+
+/* footer */
+.Fotter-outer{
+    display: flex;
+    flex-direction: row;
+    justify-content: space-around;
+    background: #61A6C5;
+    flex-wrap: wrap;
+}
+.span1{
+    font-size: 20px;
+    color:#050504
+
+}
+
+#headingFotter{
+    color:#050504
+}
+.socialImageContainer{
+    display: flex;
+    flex-direction: row;
+    margin-top: 45px;
+}
+#imagesocial {
+    width: 60px;
+    height: 60px;
+    display: flex;
+    margin-left: 12px;
+    margin-bottom: 13%;
+}
+
+/* Add Saree */
+
+.formsaree{
+    display: flex;
+    flex-direction: row;
+    justify-content: center;
+}
+
+.inputfield{
+    margin-bottom: 12%;
+    width: 307px;
+    padding: 10px;
+    color: green;
+}
