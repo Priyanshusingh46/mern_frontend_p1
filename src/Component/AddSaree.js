@@ -46,7 +46,7 @@ function AddSaree() {
                 <input type="text" placeholder='Enter Company Name'className='inputfield'onChange={(e)=>setCompany(e.target.value)}/><br></br>
                 <input type="text" placeholder='Enter Price'className='inputfield'onChange={(e)=>setPrice(e.target.value)}/><br></br>
                 <input type="text" placeholder='Available'className='inputfield'onChange={(e)=>setAvailable(e.target.value)}/><br></br>
-                <input type="file" placeholder='Saree link'className='inputfield'onChange={(e)=>setImage(e.target.value)}/><br></br>
+                <input type="text" placeholder='Saree drive link'className='inputfield'onChange={(e)=>setImage(e.target.value)}/><br></br>
                 <button type="submit" onClick={uploaddata}>Upload</button>
                 </div>
             </form>

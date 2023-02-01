@@ -39,14 +39,14 @@ function AddSuit() {
         <>
         <NavBar />
         <div style={{background: "black",height: "100vh",marginTop:"-1%"}}>
-          <h1 style={{textAlign:"center",color:"#ffff"}}>Please Fill Saree details</h1>
+          <h1 style={{textAlign:"center",color:"#ffff"}}>Please Fill Suit details</h1>
             <form className="formsaree">
               <div>
                 <input type="text" placeholder='Enter type of saree' className='inputfield' onChange={(e)=>setType(e.target.value)}/><br></br>
                 <input type="text" placeholder='Enter Company Name'className='inputfield'onChange={(e)=>setCompany(e.target.value)}/><br></br>
                 <input type="text" placeholder='Enter Price'className='inputfield'onChange={(e)=>setPrice(e.target.value)}/><br></br>
                 <input type="text" placeholder='Available'className='inputfield'onChange={(e)=>setAvailable(e.target.value)}/><br></br>
-                <input type="text" placeholder='Saree link'className='inputfield'onChange={(e)=>setImage(e.target.value)}/><br></br>
+                <input type="text" placeholder='Suit drive link'className='inputfield'onChange={(e)=>setImage(e.target.value)}/><br></br>
                 <button type="submit" onClick={uploaddata}>Upload</button>
                 </div>
             </form>

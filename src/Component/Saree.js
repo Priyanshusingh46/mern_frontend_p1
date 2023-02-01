@@ -24,10 +24,12 @@ const Saree=()=>{
     <h1 id="ourProduct">Our Products</h1>
       <div className ="Sareediv">
         {
+          data.size>0?
           data.map((data)=>{
            return (<ItemCard data={data}/>)
            
           })
+          :""
         }
       
       </div>

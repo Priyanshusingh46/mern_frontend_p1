@@ -1,13 +1,13 @@
 import axios from "axios";
 import React from "react";
-function ItemCard(props) {
+function ItemCardSuit(props) {
   console.log(props.data._id);
   let s1 = props.data.image;
   let s = "https://drive.google.com/uc?export=view&id=";
   let b = localStorage.getItem("email")
   s=s+s1;
   const deleteItem= async(id)=>{
-    const result = await axios.delete(`http://localhost:5000/saree/${id}`)
+    const result = await axios.delete(`http://localhost:5000/suit/${id}`)
     console.log(result);
     if(result){
       alert("record Deleted");
@@ -56,4 +56,4 @@ function ItemCard(props) {
   );
 }
 
-export default ItemCard;
+export default ItemCardSuit;
