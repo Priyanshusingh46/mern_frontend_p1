@@ -88,6 +88,12 @@ a:Visited{
 #sareeimagecard{
     height: 63vh;
 }
+#sareeimagecard:hover{
+    transform: scale(1.25);
+    transition-delay: 5;
+    
+}
+
 
 .TextdivPara{
     display:flex;

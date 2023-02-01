@@ -58,7 +58,7 @@ function UpdateSuit() {
                 <input type="text" value={price} placeholder='Enter Price'className='inputfield' onChange={(e)=>setPrice(e.target.value)}/><br></br>
                 <input type="text" value={available} placeholder='Available'className='inputfield' onChange={(e)=>setAvailable(e.target.value)}/><br></br>
                 <input type="text" value={image} placeholder='Saree drive link'className='inputfield' onChange={(e)=>setImage(e.target.value)}/><br></br>
-                <button type="submit" onClick={updatedata}>Upload</button>
+                <button type="submit" onClick={updatedata}>Update</button>
                 </div>
             </form>
         </div>
