@@ -9,6 +9,8 @@ import Suit from "./Component/Suit"
 import AddSaree from './Component/AddSaree';
 import SecondPrivate from './Component/SecondPrivate';
 import AddSuit from './Component/AddSuit';
+import UpdateSaree from './Component/UpdateSaree';
+import UpdateSuit from './Component/UpdateSuit';
 
 function App() {
   return (
@@ -20,6 +22,8 @@ function App() {
       <Route path="/suit" element={<PrivateComponent><Suit /></PrivateComponent>}></Route>
       <Route path="/AddSaree" element={<SecondPrivate><AddSaree /></SecondPrivate>}></Route>
       <Route path="/AddSuit" element={<SecondPrivate><AddSuit /></SecondPrivate>}></Route>
+      <Route path="/updatesaree/:id" element={<SecondPrivate><UpdateSaree /></SecondPrivate>}></Route>
+      <Route path="/updatesuit/:id" element={<SecondPrivate><UpdateSuit /></SecondPrivate>}></Route>
       </Routes>
   </BrowserRouter>
   );

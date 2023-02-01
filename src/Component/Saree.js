@@ -13,6 +13,7 @@ const Saree=()=>{
     try{
     let result = await axios.get("http://localhost:5000/saree");
     setData(result.data);
+    console.log(data);
     }
     catch(e){
       console.log(e);
@@ -24,12 +25,11 @@ const Saree=()=>{
     <h1 id="ourProduct">Our Products</h1>
       <div className ="Sareediv">
         {
-          data.size>0?
           data.map((data)=>{
+            console.log("map",data.price);
            return (<ItemCard data={data}/>)
            
           })
-          :""
         }
       
       </div>

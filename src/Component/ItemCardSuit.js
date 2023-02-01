@@ -1,5 +1,6 @@
 import axios from "axios";
 import React from "react";
+import { Link } from "react-router-dom";
 function ItemCardSuit(props) {
   console.log(props.data._id);
   let s1 = props.data.image;
@@ -45,7 +46,7 @@ function ItemCardSuit(props) {
           {
             b?
           <div style={{display:"flex",justifyContent:"space-between"}}>
-            <div><p style={{fontSize:"20px",fontWeight:"bold"}}>Update</p></div>
+           <Link to={"/updatesuit/"+props.data._id} ><p style={{fontSize:"20px",fontWeight:"bold"}}>Update</p></Link>
            <div onClick={(e)=>deleteItem(props.data._id,e)}><p style={{fontSize:"20px",color:"red",fontWeight:"bold"}} >Delete</p></div>
           </div>:""
             
