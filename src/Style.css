@@ -331,6 +331,9 @@ a:Visited{
         font-size: 20px;
         margin-left: -26px;
     }
+    .updatediv{
+        margin-top: -5%;
+    }
 }
 @media screen and (max-width:400px){
     #crosolimage {
@@ -352,5 +355,8 @@ a:Visited{
     }
     .inputfield {
         width: 300px;
+    }
+    .updatediv{
+        margin-top: -6%;
     }
 }
