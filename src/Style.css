@@ -350,4 +350,7 @@ a:Visited{
     .fotteraddress{
         margin-left: 10%;
     }
+    .inputfield {
+        width: 300px;
+    }
 }
