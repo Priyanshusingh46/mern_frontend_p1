@@ -37,38 +37,34 @@ const Login = () => {
       navigate("/register")
   }
   return (
-    <div
-      style={{
-        background: "blue",
-        display: "flex",
-        justifyContent: "center",
-        height: "100vh",
-      }}
-    >
-      <div style={{ marginTop: "30vh" }}>
-        <h1>Please Fill The Login Form !!!</h1>
+    <div className="loginregisterform">
+      <div>
+        <h1 style={{color:"#ffff", textAlign:"center"}}>Please Fill The Login Form !!!</h1>
+        
         <form>
           <input
             type="text"
             placeholder="Enter Email"
-            style={{ width: "90%", marginBottom: "5%", padding: "8px" }}
+            style={{ width: "90%", marginBottom: "5%", padding: "8px",marginLeft:"5%",marginRight:"5%",fontSize:"20px" }}
             onChange={(e) => setEmail(e.target.value)}
           />
           <br></br>
           <input
             type="text"
             placeholder="Enter Password"
-            style={{ width: "90%", marginBottom: "5%", padding: "8px" }}
-            onChange={(e) => setPassword(e.target.value)}
+            style={{ width: "90%", marginBottom: "5%", padding: "8px",marginLeft:"5%",marginRight:"5%",fontSize:"20px" }}
+            onChange={(e) => setPassword(e.target.value)} 
           />
           <br></br>
           <p>{items}</p>
-          <button type="submit" onClick={(e) => collectdata(e)} style={{fontSize:"18px"}}>
+          <div className="loginregisterbuttondiv">
+          <button type="submit" id="loginButton"onClick={(e) => collectdata(e)} style={{fontSize:"18px"}}>
             Login In
           </button>
-          <button type="submit" onClick={redirecttoRegister} style={{fontSize:"18px"}}>
+          <button type="submit" id="loginButton" onClick={redirecttoRegister} style={{fontSize:"18px"}}>
             Register
           </button>
+          </div>
         </form>
       </div>
     </div>

@@ -44,32 +44,34 @@ const Register=()=> {
     navigate("/login");
   }
   return (
-    <div style={{background:"blue" ,display:"flex",justifyContent:"center",height:"100vh"}}>
-        <div style={{marginTop:"30vh"}}>
-        <h1>Please Fill The Register Form !!!</h1>
+    <div className="loginregisterform">
+        <div>
+        <h1 style={{color:"#ffff", textAlign:"center"}}>Please Fill The Register Form !!!</h1>
         <form>
         <input type="text" placeholder='Enter Name'
-        style={{width:"90%", marginBottom:"5%",padding:"8px"}}
+        style={{ width: "90%", marginBottom: "5%", padding: "8px",marginLeft:"5%",marginRight:"5%",fontSize:"20px" }}
         onChange={(e)=> setName(e.target.value)}
         /><br></br>
         <input type="text" placeholder='Enter Email' 
-        style={{width:"90%", marginBottom:"5%",padding:"8px"}}
+        style={{ width: "90%", marginBottom: "5%", padding: "8px",marginLeft:"5%",marginRight:"5%",fontSize:"20px" }}
         onChange={(e)=> setEmail(e.target.value)}
         />
         <br></br>
         <input type="text" placeholder='Enter Password' 
-         style={{width:"90%", marginBottom:"5%",padding:"8px"}}
+         style={{ width: "90%", marginBottom: "5%", padding: "8px",marginLeft:"5%",marginRight:"5%",fontSize:"20px" }}
          onChange={(e)=> setPassword(e.target.value)}
         /><br></br>
 
         <input type="text" placeholder='Confirm Password' 
-         style={{width:"90%", marginBottom:"5%",padding:"8px"}}
+         style={{ width: "90%", marginBottom: "5%", padding: "8px",marginLeft:"5%",marginRight:"5%",fontSize:"20px" }}
          onChange={(e)=> setcPassword(e.target.value)}
         /><br></br>
-        <button type="submit" onClick={(e)=>collectdata(e)} style={{fontSize:"18px"}}>Register</button>
-        <button type="submit" onClick={redirecttoLogin} style={{fontSize:"18px"}}>
+        <div className="loginregisterbuttondiv">
+        <button type="submit" id="loginButton" onClick={(e)=>collectdata(e)} style={{fontSize:"18px"}}>Register</button>
+        <button type="submit" id="loginButton" onClick={redirecttoLogin} style={{fontSize:"18px"}}>
             Login
           </button>
+          </div>
         </form>
         </div>
     </div>

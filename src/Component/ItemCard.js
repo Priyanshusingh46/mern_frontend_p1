@@ -18,36 +18,36 @@ function ItemCard(props) {
     }
   }
   return (
-    <div>
-      <div>
+    <div className="cardouterbox">
+      <div className="cardinnerouterbox">
         <img id="sareeimagecard" src={s} alt="error" />
         <div className="Descriptionsarediv">
           <div className="TextdivPara">
             <p style={{ display: "flex" }}>
               <p id="descriptionrightside1">Type:</p>
-              <p style={{ fontSize: "20px" }}>{props.data.type}</p>
+              <p id="parasection">{props.data.type}</p>
             </p>
             <p style={{ display: "flex" }}>
               <p id="descriptionrightside">Company:</p>
-              <p style={{ fontSize: "20px" }}>{props.data.company}</p>
+              <p id="parasection">{props.data.company}</p>
             </p>
           </div>
           <div className="TextdivPara1">
             <p style={{ display: "flex" }}>
               <p id="descriptionrightside1">Price:</p>
-              <p style={{ fontSize: "20px" }}>{props.data.price}/-</p>
+              <p id="parasection">{props.data.price}/-</p>
             </p>
             <p style={{ display: "flex" }}>
               <p id="descriptionrightside">Available:</p>
-              <p style={{ fontSize: "20px" }}>{props.data.available}</p>
+              <p id="parasection">{props.data.available}</p>
             </p>
           </div>
 
           {
             b?
-          <div style={{display:"flex",justifyContent:"space-between"}}>
-            <Link to={"/updatesaree/"+props.data._id}><p style={{fontSize:"20px",fontWeight:"bold"}}>Update</p></Link>
-           <div onClick={(e)=>deleteItem(props.data._id,e)}><p style={{fontSize:"20px",color:"red",fontWeight:"bold"}} >Delete</p></div>
+          <div className="updatedeletediv">
+            <Link to={"/updatesaree/"+props.data._id}><p id="updatepara">Update</p></Link>
+           <div onClick={(e)=>deleteItem(props.data._id,e)}><p id="deletepara" >Delete</p></div>
           </div>:""
             
           }       

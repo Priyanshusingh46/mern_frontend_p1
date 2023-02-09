@@ -38,7 +38,7 @@ function AddSaree() {
   return (
         <>
         <NavBar />
-        <div style={{background: "black",height: "100vh",marginTop:"-1%"}}>
+        <div className='updatediv'>
           <h1 style={{textAlign:"center",color:"#ffff"}}>Please Fill Saree details</h1>
             <form className="formsaree">
               <div>
@@ -47,7 +47,7 @@ function AddSaree() {
                 <input type="text" placeholder='Enter Price'className='inputfield'onChange={(e)=>setPrice(e.target.value)}/><br></br>
                 <input type="text" placeholder='Available'className='inputfield'onChange={(e)=>setAvailable(e.target.value)}/><br></br>
                 <input type="text" placeholder='Saree drive link'className='inputfield'onChange={(e)=>setImage(e.target.value)}/><br></br>
-                <button type="submit" onClick={uploaddata}>Upload</button>
+                <button type="submit" id="buttons" onClick={uploaddata}>Upload</button>
                 </div>
             </form>
         </div>

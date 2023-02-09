@@ -5,6 +5,9 @@ body{
     box-sizing: border-box;
 }
 
+.croselBox{
+    overflow-x: hidden;
+}
 /* Header */
 
 #anulogo{
@@ -45,6 +48,7 @@ body{
     background: #61A6C5;
     width: 100%;
     flex-wrap: wrap;
+    overflow-x: hidden;
 }
 li a{
     color:#FDBB11;
@@ -79,6 +83,11 @@ a:Visited{
     justify-content: space-between;
     
 }
+.sareeouterdiv{
+    background:#FFF6E4;
+    margin-top:-1%;
+    overflow-x: hidden;
+}
 #ourProduct{
     text-align: center;
     font-size: 37px;
@@ -93,36 +102,74 @@ a:Visited{
     transition-delay: 5;
     
 }
+#parasection{
+    font-size: 25px;
+}
+
+#updatepara{
+    font-size: 25px;
+    font-weight: 600;
+    margin-left: 10%;
+}
+#deletepara{
+    font-size: 25px;
+    color: red;
+    font-weight: bold;
+    margin-right: 16px;
+}
 
 
 .TextdivPara{
     display:flex;
-    justify-content:space-between
+    justify-content:space-between;
+    flex-wrap: wrap;
 }
 
 .TextdivPara1{
     display:flex;
     justify-content:space-between;
     margin-top: -7%;
+    flex-wrap: wrap;
 }
 .Descriptionsarediv{
     width: 100%;
     margin-top: -1%;
     margin-bottom: 7%;
-    border: 1px solid black;
 }
 #descriptionrightside{
-    font-size:20px;
+    font-size:25px;
     font-Weight:bold;
     margin-right:10%;
     margin-left: -13%;
 }
 
 #descriptionrightside1{
-    font-size:20px;
+    font-size:25px;
     margin-right:10%;
     font-weight: bold;
     margin-left: 9%;
+}
+
+.updatedeletediv{
+    display: flex;
+    justify-content: space-between;
+    flex-wrap: wrap;
+    margin-top: -6%;
+}
+.cardinnerouterbox{
+    margin-bottom: 24%;
+}
+.cardouterbox{
+    overflow-x: hidden;
+}
+
+/* updatesaree/suit */
+.updatediv{
+    background-image: url("./Images/bg.jpg");
+    background-size: cover;
+    background-repeat: no-repeat;
+    margin-top: -2%;
+    height: 100vh;
 }
 
 /* footer */
@@ -161,11 +208,146 @@ a:Visited{
     display: flex;
     flex-direction: row;
     justify-content: center;
+    margin-top: 13%;
 }
 
-.inputfield{
+.inputfield {
     margin-bottom: 12%;
-    width: 307px;
+    width: 400px;
     padding: 10px;
     color: green;
+    font-size: 21px;
+}
+#buttons{
+    width: 120px;
+    height: 4vh;
+    font-size: 20px;
+}
+
+/* login/register form */
+.loginregisterform{
+    background-image: url("./Images/background.png");
+    background-size: cover;
+    background-repeat: no-repeat;
+    height: 100vh;
+    margin-top: -2%;
+}
+#loginButton{
+    font-size: 20px;
+    margin-bottom: 2%;
+    width: 15%;
+    margin-left: 41%;
+}
+.loginregisterbuttondiv{
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+}
+@media screen and (max-width:1160px){
+    #sareeimagecard {
+        height: 48vh;
+    }
+    #descriptionrightside1 {
+        font-size: 25px;
+        margin-right: 0%;
+        font-weight: bold;
+        margin-left: 0;
+    }
+    #parasection {
+        font-size: 25px;
+    }
+    #descriptionrightside {
+        font-size: 25px;
+        font-Weight: bold;
+        margin-right: 5%;
+        margin-left: -14%;
+    }
+    .updatedeletediv {
+        margin-top: -11%;
+    }
+    #updatepara {
+        font-size: 25px;
+        font-weight: 600;
+        margin-left: 0%;
+    }
+    #deletepara {
+        font-size: 25px;
+        color: red;
+        font-weight: bold;
+        margin-right: 1px;
+    }
+    .TextdivPara1 {
+        margin-top: -15%;
+    }
+}
+@media screen and (max-width:1010px){
+    #crosolimage {
+        height: 26vh;
+    }
+    .Sareediv {
+        justify-content: center;
+    }
+}
+@media screen and (max-width:712px) {
+    #sareeimagecard {
+        height: 36vh;
+    }
+    #descriptionrightside1 {
+        font-size: 20px;
+    }
+    #parasection {
+        font-size: 20px;
+    }
+    #descriptionrightside {
+        font-size: 20px;
+        margin-right: 2%;
+        margin-left: -5%;
+    }
+    #updatepara {
+        font-size: 20px;
+    }
+    #deletepara {
+        font-size: 20px;
+    }
+    .updatedeletediv {
+        margin-top: -15%;
+    }
+    .TextdivPara1 {
+        margin-top: -21%;
+    }
+    #ourProduct {
+        font-size: 27px;
+    }
+    .Sareediv {
+        justify-content: space-around;
+    }
+}
+
+@media screen and (max-width:514px){
+    #crosolimage {
+        height: 25vh;
+    }
+    .link {
+        font-size: 20px;
+        margin-left: -26px;
+    }
+}
+@media screen and (max-width:400px){
+    #crosolimage {
+        height: 19vh;
+    }
+    .link {
+        font-size: 16px;
+        margin-left: -30px;
+    }
+    /* saree */
+    .Sareediv{
+        justify-content: center;
+    }
+    #sareeimagecard {
+        width: 290px;
+    }
+    .fotteraddress{
+        margin-left: 10%;
+    }
 }

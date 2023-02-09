@@ -21,7 +21,7 @@ const Saree=()=>{
   }
   
   return (
-    <div style={{background:"#FFF6E4",marginTop:"-1%"}}>
+    <div className='sareeouterdiv'>
     <h1 id="ourProduct">Our Products</h1>
       <div className ="Sareediv">
         {

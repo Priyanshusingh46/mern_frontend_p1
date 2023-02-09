@@ -14,7 +14,7 @@ import css from "../Style.css"
 
 function Crosel() {
   return (
-    <div>
+    <div className='croselBox'>
         <Carousel showThumbs={false} showArrows={true}>
             
             <div style={{display:"flex"}}>
