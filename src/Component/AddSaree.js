@@ -19,7 +19,7 @@ function AddSaree() {
       }
       else{
         try{
-        let result= await axios.post("http://localhost:5000/addsaree",{
+        let result= await axios.post("https://anu-backend.onrender.com/addsaree",{
           type,
           company,
           price,

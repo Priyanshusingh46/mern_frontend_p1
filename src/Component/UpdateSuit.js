@@ -16,7 +16,7 @@ function UpdateSuit() {
   }, [])
 
   const getProductDetails = async()=>{
-    let result = await axios.get(`http://localhost:5000/updatesuit/${params.id}`)
+    let result = await axios.get(`https://anu-backend.onrender.com/updatesuit/${params.id}`)
     if(result){
         setType(result.data.type);
         setCompany(result.data.company);
@@ -32,7 +32,7 @@ function UpdateSuit() {
     e.preventDefault();
      
         try{
-        let result= await axios.put(`http://localhost:5000/updatesuit/${params.id}`,{
+        let result= await axios.put(`https://anu-backend.onrender.com/updatesuit/${params.id}`,{
           type,
           company,
           price,

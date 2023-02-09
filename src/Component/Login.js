@@ -11,7 +11,7 @@ const Login = () => {
   const collectdata = async (e) => {
     e.preventDefault();
     try {
-      let result = await axios.post("http://localhost:5000/login", {
+      let result = await axios.post("https://anu-backend.onrender.com/login", {
         email,
         password,
       });

@@ -17,7 +17,7 @@ function UpdateSaree() {
 
   const getProductDetails = async()=>{
     console.log(params.id)
-    let result = await axios.get(`http://localhost:5000/updatesaree/${params.id}`)
+    let result = await axios.get(`https://anu-backend.onrender.com/updatesaree/${params.id}`)
     console.log(result.data);
     if(result){
         setType(result.data.type);
@@ -34,7 +34,7 @@ function UpdateSaree() {
     e.preventDefault();
      
         try{
-        let result= await axios.put(`http://localhost:5000/updatesaree/${params.id}`,{
+        let result= await axios.put(`https://anu-backend.onrender.com/updatesaree/${params.id}`,{
           type,
           company,
           price,

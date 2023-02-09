@@ -19,7 +19,7 @@ function AddSuit() {
       }
       else{
         try{
-        let result= await axios.post("http://localhost:5000/addsuit",{
+        let result= await axios.post("https://anu-backend.onrender.com/addsuit",{
           type,
           company,
           price,

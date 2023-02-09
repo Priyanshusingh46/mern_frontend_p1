@@ -8,7 +8,7 @@ function ItemCardSuit(props) {
   let b = localStorage.getItem("email")
   s=s+s1;
   const deleteItem= async(id)=>{
-    const result = await axios.delete(`http://localhost:5000/suit/${id}`)
+    const result = await axios.delete(`https://anu-backend.onrender.com/suit/${id}`)
     console.log(result);
     if(result){
       alert("record Deleted");

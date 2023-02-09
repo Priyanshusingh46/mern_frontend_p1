@@ -11,7 +11,7 @@ const Saree=()=>{
 
   const getItems=async()=>{
     try{
-    let result = await axios.get("http://localhost:5000/saree");
+    let result = await axios.get("https://anu-backend.onrender.com/saree");
     setData(result.data);
     console.log(data);
     }

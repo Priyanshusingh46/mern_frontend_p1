@@ -26,7 +26,7 @@ const Register=()=> {
       }
       else
       {
-      let result = await axios.post("http://localhost:5000/register",{
+      let result = await axios.post("https://anu-backend.onrender.com/register",{
       name,
       email,
       password,

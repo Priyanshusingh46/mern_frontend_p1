@@ -14,7 +14,7 @@ function Suit() {
 
   const getItems=async()=>{
     try{
-    let result = await axios.get("http://localhost:5000/suit");
+    let result = await axios.get("https://anu-backend.onrender.com/suit");
     setData(result.data);
     }
     catch(e){
