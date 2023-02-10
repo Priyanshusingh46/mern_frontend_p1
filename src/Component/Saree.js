@@ -3,7 +3,7 @@ import ItemCard from './ItemCard'
 import css from "../Style.css";
 import axios from "axios"
 const Saree=()=>{
-  const[data,setData] = useState([]);
+  const[data,setData] = useState(null);
 
   useEffect(() => {
     getItems();

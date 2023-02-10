@@ -6,7 +6,7 @@ import Crosel from "./Crosel"
 import Saree from "./Saree"
 import Fotter from "./Footer"
 function Suit() {
-  const[data,setData] = useState([]);
+  const[data,setData] = useState(null);
 
   useEffect(() => {
     getItems();
