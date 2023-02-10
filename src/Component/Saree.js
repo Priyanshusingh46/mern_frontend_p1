@@ -25,7 +25,7 @@ const Saree=()=>{
     <h1 id="ourProduct">Our Products</h1>
       <div className ="Sareediv">
         {
-          data.map((data)=>{
+          data && data.map((data)=>{
             console.log("map",data.price);
            return (<ItemCard data={data}/>)
            

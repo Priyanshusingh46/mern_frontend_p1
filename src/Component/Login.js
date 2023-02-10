@@ -39,20 +39,20 @@ const Login = () => {
   return (
     <div className="loginregisterform">
       <div>
-        <h1 style={{color:"#ffff", textAlign:"center"}}>Please Fill The Login Form !!!</h1>
+        <h1 id="loginpara">Please Fill The Login Form !!!</h1>
         
-        <form>
+        <form className="formdiv">
           <input
             type="text"
             placeholder="Enter Email"
-            style={{ width: "90%", marginBottom: "5%", padding: "8px",marginLeft:"5%",marginRight:"5%",fontSize:"20px" }}
+            id="forminputfield"
             onChange={(e) => setEmail(e.target.value)}
           />
           <br></br>
           <input
-            type="text"
+            type="password"
             placeholder="Enter Password"
-            style={{ width: "90%", marginBottom: "5%", padding: "8px",marginLeft:"5%",marginRight:"5%",fontSize:"20px" }}
+            id="forminputfield"
             onChange={(e) => setPassword(e.target.value)} 
           />
           <br></br>

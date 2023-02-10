@@ -135,6 +135,7 @@ a:Visited{
     width: 100%;
     margin-top: -1%;
     margin-bottom: 7%;
+    background: #e8dcc4;
 }
 #descriptionrightside{
     font-size:25px;
@@ -243,6 +244,19 @@ a:Visited{
     flex-direction: column;
     justify-content: center;
 }
+#loginpara{
+    color:#ffff;
+     text-align:center;
+     margin-top:34px
+}
+#forminputfield{
+    width: 90%;
+    margin-bottom: 5%;
+    padding: 8px;
+    margin-left:5%;
+    margin-right:5%;
+    font-size:20px
+}
 @media screen and (max-width:1160px){
     #sareeimagecard {
         height: 48vh;
@@ -322,6 +336,23 @@ a:Visited{
         justify-content: space-around;
     }
 }
+@media screen and (max-width:700px){
+    .formdiv{
+        margin-top: 48%;
+    }
+}
+
+@media screen and (max-width:554px){
+    #loginButton{
+    font-size: 21px;
+    width: 24%;
+    margin-left: 30%;
+    height: 4vh;
+    }
+    #loginpara{
+         margin-top:12px
+    }
+}
 
 @media screen and (max-width:514px){
     #crosolimage {
@@ -333,6 +364,16 @@ a:Visited{
     }
     .updatediv{
         margin-top: -5%;
+    }
+    #loginpara{
+        font-size: 22px;
+   }
+   #loginButton {
+    width: 37%;
+}
+#forminputfield {
+    width: 81%;
+    margin-left: 8%;
     }
 }
 @media screen and (max-width:400px){

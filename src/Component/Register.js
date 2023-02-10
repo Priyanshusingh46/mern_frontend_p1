@@ -46,25 +46,22 @@ const Register=()=> {
   return (
     <div className="loginregisterform">
         <div>
-        <h1 style={{color:"#ffff", textAlign:"center"}}>Please Fill The Register Form !!!</h1>
-        <form>
+        <h1 id="loginpara">Please Fill The Register Form !!!</h1>
+        <form className="formdiv">
         <input type="text" placeholder='Enter Name'
-        style={{ width: "90%", marginBottom: "5%", padding: "8px",marginLeft:"5%",marginRight:"5%",fontSize:"20px" }}
+        id="forminputfield"
         onChange={(e)=> setName(e.target.value)}
         /><br></br>
         <input type="text" placeholder='Enter Email' 
-        style={{ width: "90%", marginBottom: "5%", padding: "8px",marginLeft:"5%",marginRight:"5%",fontSize:"20px" }}
-        onChange={(e)=> setEmail(e.target.value)}
+        id="forminputfield" onChange={(e)=> setEmail(e.target.value)}
         />
         <br></br>
-        <input type="text" placeholder='Enter Password' 
-         style={{ width: "90%", marginBottom: "5%", padding: "8px",marginLeft:"5%",marginRight:"5%",fontSize:"20px" }}
-         onChange={(e)=> setPassword(e.target.value)}
+        <input type="password" placeholder='Enter Password' 
+         id="forminputfield" onChange={(e)=> setPassword(e.target.value)}
         /><br></br>
 
-        <input type="text" placeholder='Confirm Password' 
-         style={{ width: "90%", marginBottom: "5%", padding: "8px",marginLeft:"5%",marginRight:"5%",fontSize:"20px" }}
-         onChange={(e)=> setcPassword(e.target.value)}
+        <input type="password" placeholder='Confirm Password' 
+        id="forminputfield" onChange={(e)=> setcPassword(e.target.value)}
         /><br></br>
         <div className="loginregisterbuttondiv">
         <button type="submit" id="loginButton" onClick={(e)=>collectdata(e)} style={{fontSize:"18px"}}>Register</button>
